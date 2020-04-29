@@ -118,8 +118,8 @@ The motivation was to create a more complex model for the diploma thesis, the as
 % Projekt jsem si rozdělil do několika úkolů: vytvořit terén (úbočí a cestu), nainstalovaní modelů kajícníků (sněhových útvarů) na úbočí hory, vytvoření modelu lidského kajícníka a následné naanimování scény.
 I divided the project into several tasks: creating the terrain (hillside and path), installing models of penitents (snow formations) on the mountainside, creating a model of a human penitent and then animating the scene.
 \subsection{Terrain}
-% Terén jsem modeloval z plochy, tuto plochu jsem nejdříve jen lehce rozdělil a zvrásnil pohybem vektorů se zapnutým \textit{Proportional editing obejct}, na následně \textit{sculp mode} dotvaroval a vyzdvihl násep cesty. V případě tohoto modelu jsem mnohem více času než s modelováním strávil se snahou vytvořit věrohodnou texturu. Původně jsem zkoušel kombinovat v \textit{Shader editoru} dvě nodes \textit{Principel BSDF}, každé nastavil základní a podkladovou barvu, následně použil šum k určení poměru prosvítání podkladové barvy a míchání mezi oběma nodes, ale výsledek nebyl příliš kvalitní, nakonec jsem uchýlil k textuře na základě fotky stažené z pixbay  a tuto fotku použil jako barevný vstup pro jednu z \textit{Principel BSDF} node. Dále jsem na základě jedné šumové funkce upravoval normály a hrubost textur.  
-I modeled the terrain from the surface, at first I only slightly divided this surface and wrinkled it by moving vectors with \textit{Proportional editing obejct} turned on, then on \textit{sculp mode} crept up and lifted the road embankment. In the case of this model, I spent much more time than modeling trying to create a believable texture. I originally tried to combine two nodes \textit{Principel BSDF} in the \textit{Shader editor}, each set the base and background colors, then used the noise to determine the ratio of translucency of the background color and mixing between the two nodes, but the result was not very good, he resorted to texture based on a photo downloaded from pixbay and used that photo as color input for one of the \textit{Principel BSDF} node. I also adjusted the normals and roughness of the textures based on one noise function.
+% Terén jsem modeloval z plochy, tuto plochu jsem nejdříve jen lehce rozdělil a zvrásnil pohybem vektorů se zapnutým \textit{Proportional editing obejct}, na následně \textit{sculp mode} dotvaroval a vyzdvihl násep cesty. V případě tohoto modelu jsem mnohem více času než s modelováním strávil se snahou vytvořit věrohodnou texturu. Původně jsem zkoušel kombinovat v \textit{Shader editoru} dvě nodes \textit{Principel BSDF}, každé nastavil základní a podkladovou barvu, následně použil šum k určení poměru prosvítání podkladové barvy a míchání mezi oběma nodes, ale výsledek nebyl příliš kvalitní, nakonec jsem uchýlil k textuře na základě fotky stažené z pixabay  a tuto fotku použil jako barevný vstup pro jednu z \textit{Principel BSDF} node. Dále jsem na základě jedné šumové funkce upravoval normály a hrubost textur.  
+I modeled the terrain from the surface, at first I only slightly divided this surface and wrinkled it by moving vectors with \textit{Proportional editing obejct} turned on, then on \textit{sculp mode} crept up and lifted the road embankment. In the case of this model, I spent much more time than modeling trying to create a believable texture. I originally tried to combine two nodes \textit{Principel BSDF} in the \textit{Shader editor}, each set the base and background colors, then used the noise to determine the ratio of translucency of the background color and mixing between the two nodes, but the result was not very good, he resorted to texture based on a photo downloaded from pixabay\footnote{https://cdn.pixabay.com/photo/2015/04/18/07/13/rocks-728393_960_720.jpg} and used that photo as color input for one of the \textit{Principel BSDF} node. I also adjusted the normals and roughness of the textures based on one noise function.
 \begin {center}
 \includegraphics [height = 10cm] {terrain.png}
 % \caption {Terén s kajícníkem a kajícníky(sněhovými útvary)}
@@ -178,6 +178,11 @@ The resulting product is not bad, but it would like to improve the texture of th
 % \caption {Model kajícníka}
 \caption {Model of a penitent}
 \end {center}
+\begin {center}
+\includegraphics [height = 10cm,angle =90 ] {foto.png}
+% \caption {Model kajícníka}
+\caption {Model of a penitent}
+\end {center}
 % %---------------------------------------------------------------------------
 
  \bibliographystyle{enplain}
@@ -186,4 +191,5 @@ The resulting product is not bad, but it would like to improve the texture of th
 \addcontentsline{toc}{section}{Literature}
 
 \end{document}
+
 
